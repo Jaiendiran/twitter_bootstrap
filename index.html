@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title> Twitter bootstrap </title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		
+	</head>
+	<body>
+	
+	<div class="container" id="main">
+
+<!--##################################          NAVBAR               #################################################################-->
+ 
+      <div class="navbar navbar-fixed-top" id="navbr">
+        <div class="container">
+
+          <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+      			<span class="icon-bar"></span>
+      			<span class="icon-bar"></span>
+      			<span class="icon-bar"></span>
+  		    </button>
+          
+          <a class="navbar-brand" href="#"> <img src="images/logo.png " /></a>
+          
+          <div class="nav-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav ">
+              <li> <a href="#"> Home </a> </li>
+              <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Services <strong class="caret"></strong> </a> 
+              		<ul class="dropdown-menu">
+	              		<li> <a href="#"> Web Design</a></li>
+
+	              		<li> <a href="#"> Web Dev</a></li>
+
+	              		<li> <a href="#"> seo</a></li>
+
+	              		<li class="divider"> </li>
+
+	              		<li class="dropdown-header"> Menu's</li>
+
+	              		<li> <a href="#"> Menu 1 </a></li>
+
+	              		<li> <a href="#"> Menu 2 </a></li>
+
+	              		<li> <a href="#"> Menu 3 </a></li>
+              			
+              		</ul><!--End of dropedown menu-->
+              </li>
+            </ul>  
+            
+            <form class="navbar-form pull-left ">
+              <input type="text" class="form-control" placeholder="search here..." id="searchInput">
+              <button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-search"></span></button>
+            </form>
+
+            <ul class="nav navbar-nav pull-right">
+              <li >
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="glyphicon glyphicon-user"> </span> My Account 
+                <strong class="caret"></strong></a>
+                <ul class="dropdown-menu">
+                	<li> <a href="#"> <span class="glyphicon glyphicon-wrench"></span> Settings </a> </li>
+
+                	<li> <a href="#"> <span class="glyphicon glyphicon-refresh"></span>Update </a> </li>
+
+                	<li> <a href="#"> <span class="glyphicon glyphicon-briefcase"></span>Billings </a> </li>
+                	
+                	<li class="divider"></li>
+
+                	<li> <a href="#"> <span class="glyphicon glyphicon-off"></span>Log Out </a> </li>
+                </ul>
+              </li>
+            </ul><!--end of pull-right-->
+          </div><!--end of navbar collapse-->
+
+        </div>
+        
+      </div> <!--end of the navbar-->
+
+<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&        NAVBAR END           &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+
+<!--######################################        CAROUSEL             #############################################################-->
+   
+      <div class="carousel slide" id="myCarousel" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+      	<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+      	<li data-slide-to="1" data-target="#myCarousel"></li>
+      	<li data-slide-to="2" data-target="#myCarousel"></li>
+      </ol>
+
+      	<div class="carousel-inner">
+      		<div class="item active" id="slide1">
+            
+      			<div class="carousel-caption">
+      				<h4> Heading </h4>
+					<p>Learn how to build your first responsive website with the brand new Twitter Bootstrap 3!</p>
+      			</div>
+      		</div>
+
+      		<div class="item" id="slide2">
+      			<div class="carousel-caption">
+      				<h4> Heading </h4>
+					<p>PSD to HTML5 &amp; CSS3 is a popular Udemy course that has helped thousands of aspiring web designers launch their web design career.</p>
+      			</div>
+      		</div>
+
+      		<div class="item" id="slide3">
+      			<div class="carousel-caption">
+      				<h4> Heading </h4>
+					<p>Learn how to buy a perfect domain name and hosting package, and get your website live on the web with ease.</p>
+      			</div>
+      		</div>
+      	</div>
+      	<a class="left carousel-control" data-slide="prev" href="#myCarousel"> <span class="icon-prev"></span></a>
+
+        <a class="right carousel-control" data-slide="next" href="#myCarousel"> <span class="icon-next"></span></a>
+
+      </div><!-- end of the myCarousel-->
+
+<!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&            CAROUSEL END              &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+
+<!--################################################            ROW 1                 ##########################################-->
+
+      <div class="row" id="bigCallout">
+        <div class="col-12">
+          <div class="alert alert-success alert-block fade in" id="successAlert">
+      	   <button type="button" class="close" data-dismiss="alert"> &times;</button>
+      	   <h4> Success</h4>
+      	   <p> You just made it !!</p>
+          </div><!--end iof alert-->
+      
+<!--only visible for small devices-->      
+      	<div class="well well-small visible-sm">
+      		<a href="#" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"> Give us a call</span></a>
+      	</div><!--end of well-small-->
+      
+      	<div class="well">
+      		<div class="page-header">
+      			<h1>Fancy Header <small> subheader </small></h1>
+          </div>
+      			<p class="lead"> this is the paragraph tag </p>
+      			<a href="#" class="btn btn-large btn-primary" id="alertMe"> click me here </a>
+      			<a href="#" class="btn btn-large btn-link"> or a secondary link </a>
+      	  
+      	 </div><!--end of well-->
+       </div> <!--end of col12-->     
+      </div><!--end of the bidcallout-->
+
+
+
+      <div class="row" id="featuresHeading">
+        <div class="col-12">
+          <h2> More Features </h2>
+          <p class="lead"> This site contains more features than the other.</p>
+        </div>
+      </div><!--end of the featuresHeading-->
+
+
+
+      <div class="row" id="features">
+        <div class="col-sm-4 feature">
+          <div class="panel">
+            <div class="panel-heading">
+              <div class="panel-title"> Panel 1</div>              
+            </div>
+            <img src="images/badge_bootstrap.jpg" class="img-circle" alt="bootstap">
+            <p> This is the panel number one.</p>
+            <a href="#" class="btn btn-block btn-warning" target="_blank"> click me here !</a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 feature">
+          <div class="panel">
+            <div class="panel-heading">
+              <div class="panel-title"> Panel 2</div>              
+            </div>
+            <img src="images/badge_html5.jpg" class="img-circle" alt="html5">
+            <p> This is the panel number two.</p>
+            <a href="#" class="btn btn-block btn-danger" target="_blank"> click me here !</a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 feature">
+          <div class="panel">
+            <div class="panel-heading">
+              <div class="panel-title"> Panel 3</div>              
+            </div>
+            <img src="images/badge_css3.jpg" class="img-circle" alt="css3">
+            <p> This is the panel number three.</p>
+            <a href="#" class="btn btn-block btn-default" target="_blank"> click me here !</a>
+          </div>
+        </div>
+      </div><!--end of the features-->
+
+
+
+      <div class="row" id="moreInfo">
+        <div class="col-sm-6">
+        <h3>This is the tab section</h3>
+          
+          <div class="tabbable">
+            <ul class="nav nav-tabs">
+              <li class="active"> <a href="#tab1" data-toggle="tab"> Section 1</a></li>
+              <li> <a href="#tab2" data-toggle="tab"> Section 2</a></li>
+            </ul>
+    
+          <div class="tab-content">              
+            <div class="tab-pane active" id="tab1">
+              <h4><span class="glyphicon glyphicon-map-marker"></span> Our Location <small>our favourite place !</small></h4>
+
+                <iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=waikiki+beach&amp;aq=&amp;sll=19.896766,-155.582782&amp;sspn=8.711424,11.854248&amp;ie=UTF8&amp;hq=&amp;hnear=Waikiki+Beach,+Honolulu,+Hawaii,+United+States&amp;t=m&amp;ll=21.277298,-157.8265&amp;spn=0.015996,0.036478&amp;z=14&amp;output=embed">                  
+                </iframe><!-- end of google loc-->
+
+                <p>A map projection is any method used in cartography (mapmaking) to represent the two-dimensional curved surface of the earth or other body on a plane. The term " projection" here refers to any function defined on the earth's surface and with values on the plane, and not necessarily a geometric projection.Flat maps could not exist without map projections. Flat maps can be more useful than globes in many situations: they are more compact and easier to store; they readily accommodate an enormous range of scales; they are viewed easily on computer displays; they can facilitate measuring properties of the terrain being mapped; they can show larger portions of the earth's surface at once; and they are cheaper to produce and transport. These useful traits of flat maps motivate the development of map projections.
+                </p>
+             </div><!--end of tab pane tab1-->   
+             
+            <div class="tab-pane" id="tab2">
+              <h4> Twitter </h4>
+              
+              <img src="images/badge_bootstrap.jpg" class="thumbnail pull-left">
+              
+              <p>A map projection is any method used in cartography (mapmaking) to represent the two-dimensional curved surface of the earth or other body on a plane. The term " projection" here refers to any function defined on the earth's surface and with values on the plane, and not necessarily a geometric projection.Flat maps could not exist without map projections. Flat maps can be more useful than globes in many situations: they are more compact and easier to store; they readily accommodate an enormous range of scales; they are viewed easily on computer displays; they can facilitate measuring properties of the terrain being mapped; they can show larger portions of the earth's surface at once; and they are cheaper to produce and transport. These useful traits of flat maps motivate the development of map projections.
+                </p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <hr />
+              <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"> click to view modal</span></a>
+
+              <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" data-dismiss="modal">&times;</button>
+
+                      <h4 class="modal-title"> Modal window </h4>
+                    </div>
+                    <div class="modal-body">
+                      <h4>This is the modal body</h4>
+                      <p> This modal body contains some of information that you will understand later !</p>
+                      <h4>PopOvers in modal</h4>
+                      <a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="Popover title" data-content="this is content"> Pls dont click</a>
+                      <hr />
+                      <h4> Links in modal</h4>  
+                      <p><small class="text-muted"> This <a href="#" rel="tooltip" data-original-title="Tooltip">Link</a> will redirect to the Modal content</small></p>                    
+                      <hr>
+                      <h4> Form section</h4>
+                      <form class="form-horizontal">
+                        <P> <small class="text-muted">Please fill this form !!</small></P>
+          
+                          <div class="form-group">
+                            <label class="col-lg-2 control-label" for="inputName"> Name</label>
+                            <div class="col-lg-10">
+                              <input type="text" class="form-control" id="inputName" placeholder="Enter your name" />
+                            </div>
+                          </div><!-- end of name-->
+
+                           <div class="form-group">
+                            <label class="col-lg-2 control-label" for="inputEmail"> Email</label>
+                            <div class="col-lg-10">
+                              <input type="email" class="form-control" id="inputEmail" placeholder="Enter your Email" />
+                            </div>
+                          </div><!--end of email-->
+
+                           <div class="form-group">
+                            <label class="col-lg-2 control-label" for="inputMessage"> Message</label>
+                            <div class="col-lg-10">
+                              <textarea type="text" class="form-control" id="inputMessage" placeholder="Your Message" rows="3"></textarea>
+                            </div>
+                          </div><!-- end of message-->
+                          <button type="button" class="btn btn-success pull-right"> Send</button>        
+                      </form><!-- end of the form-->
+                    </div><!--end of the modal body-->
+                    <div class="modal-footer">
+                      <button  class="btn btn-danger" type="button" data-dismiss="modal"> Close</button>
+                      <button class="btn btn-primary" type="submit" > Save changes</button>
+                    </div>
+                  </div><!-- end of modal content-->
+                </div><!-- end of modal dialog-->
+              </div><!-- end of modal-->
+          
+          </div><!--end of tab pane tab2-->
+        </div><!--end of tab content-->
+       </div><!--end of tabbable-->
+      </div><!-- end of col-sm-6-->
+
+       <div class="col-sm-6">
+       <h4> List group</h4>
+       <div class="list-group">
+        
+         <a href="#" class="list-group-item">
+           <h4 class="list-group-item-heading"> List heading 1</h4>
+           <p class="list-group-item-text"> this is content of the list group item 1</p>
+         </a>
+
+         <a href="#" class="list-group-item">
+           <h4 class="list-group-item-heading"> List heading 2</h4>
+           <p class="list-group-item-text"> this is content of the list group item 2</p>
+         </a>
+
+         <a href="#" class="list-group-item">
+           <h4 class="list-group-item-heading"> List heading 3</h4>
+           <p class="list-group-item-text"> this is content of the list group item 3</p>
+         </a>
+         <h5>small text</h5>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <p>A map projection is any method used in cartography (mapmaking) to represent the two-dimensional curved surface of the earth or other body on a plane. The term " projection" here refers to any function defined on the earth's surface and with values on the plane, and not necessarily a geometric projection.Flat maps could not exist without map projections. Flat maps can be more useful than globes in many situations: they are more compact and easier to store; they readily accommodate an enormous range of scales; they are viewed easily on computer displays.
+
+
+       </div><!-- end oif the list group-->
+      </div><!-- end of col-sm-6-->
+      </div><!--end of the moreInfo-->
+
+<hr>
+
+      <div class="row" id="moreCourses">
+      <div class="col-12">
+        <h3>Learn  more about code</h3>
+        <div class="thumbnails row">
+          <div class="col-6">
+            <div class="thumbnail">
+              <img src="images/item_psd2html5.jpg" alt="psd2html5">
+              <label class="label label-success price"><span class="glyphicon glyphicon-tag"><sup>$</sup>30</span></label>
+
+              <div class="caption">
+                <h3> psd2html5</h3>
+                <p> The term " projection" here refers to any function defined on the earth's surface and with values on the plane, and not necessarily a geometric projection.Flat maps could not exist without map projections. Flat maps can be more useful than globes in many situations: they are more compact and easier to store; they readily accommodate an enormous range of scales; they are viewed easily on computer displays.
+                </p>
+                <p><a href="#" class="btn btn-primary btn-small" target="_blank"> Take courses</a> <a href="#" class="btn btn-link btn-small" target="_blank"> Learn more</a></p>
+              </div><!-- end of the caption-->
+            </div><!-- end of the thumbnail-->
+          </div><!--end of the col-6-->
+
+           <div class="col-6">
+            <div class="thumbnail">
+              <img src="images/item_webhosting101.jpg" alt="web hosting 101">
+               <label class="label label-info price"><span class="glyphicon glyphicon-tag"><sup>$</sup>50</span></label>
+
+              <div class="caption">
+                <h3> web hosting 101</h3>
+                <p> The term " projection" here refers to any function defined on the earth's surface and with values on the plane, and not necessarily a geometric projection.Flat maps could not exist without map projections. Flat maps can be more useful than globes in many situations: they are more compact and easier to store; they readily accommodate an enormous range of scales; they are viewed easily on computer displays.
+                </p>
+                <p><a href="#" class="btn btn-primary btn-small" target="_blank"> Take courses</a> <a href="#" class="btn btn-link btn-small" target="_blank"> Learn more</a></p>
+              </div><!-- end of the caption-->
+            </div><!-- end of the thumbnail-->
+          </div><!--end of the col-6-->
+        </div><!-- end of the thumbnail row-->
+      </div><!-- end of col-12-->       
+    </div><!--end of the moreCourses-->
+  </div><!--end of the conainer-->
+
+<!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&          ROW END             &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+
+<!--###############################################           FOOTER              #############################################-->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <h6>Copyrights &copy; 2016 { Jai }</h6>
+        </div><!-- end of the col-sm-2-->
+
+        <div class="col-sm-4">
+          <h6> About US</h6>
+          <p>The term " projection" here refers to any function defined on the earth's surface and with values on the plane, and not necessarily a geometric projection.Flat maps could not exist without map projections. Flat maps can be more useful than globes in many situations: they are more compact and easier to store; they readily accommodate an enormous range of scales; they are viewed easily on computer displays.
+          </p>
+        </div><!-- end of the col-sm-4-->
+
+        <div class="col-sm-2">
+          <h6> Navigation</h6>
+          <ul class="unstyled">
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">Services</a></li>
+            <li> <a href="#">Links</a></li>
+            <li> <a href="#">Contacts</a></li>
+          </ul>
+        </div><!-- end of the col-sm-2-->
+
+        <div class="col-sm-2">
+           <h6> Follow Us</h6>
+          <ul class="unstyled">
+            <li> <a href="#">Twitter</a></li>
+            <li> <a href="#">Facebook</a></li>
+            <li> <a href="#">Google plus</a></li>            
+          </ul>
+        </div><!-- end of the col-sm-2-->
+        
+        <div class="col-sm-2">
+          <h6> Coded with<span class="glyphicon glyphicon-heart"></span> by<strong>Jai</strong></h6>
+        </div><!-- end of the col-sm-2-->
+      </div>
+    </div><!-- end of the container-->
+  </footer>
+
+<!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&               FOOTER END             &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
